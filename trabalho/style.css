@@ -1,3 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
-:root{ --branco: rgb(255, 255, 255); --cor-de-fundo: hwb(224 38% 7%); --cor-do-texto: hwb(0 0% 100%); --fundo-texto: #4f6ceb; --fundo-texto2: #2600ff; --borda: #bc9a4b; --roboto: 'Roboto', sans-serif; --roboto-mono: 'Roboto Mono', monospace; } body{ color: var(--cor-do-texto); background-color: var(--cor-de-fundo); font-family: var(--roboto-mono); } .titulo-principal{ background-color: var(--fundo-texto); font-size: 32px; } .titulo-secundario{ font-size: 24px; background-color: var(--fundo-texto); } .checkbox{ color: aqua; background-color: var(--fundo-texto2); margin-top: 12px; padding: 10px; }
+:root {
+    --bg-color: #222831;
+    --primary-color: #DDDDDD;
+    --secondary-color: #F05454;
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
